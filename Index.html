@@ -17,7 +17,7 @@ const color = p => p?p[0]:null;
 const isWhite = p => p&&p[0]==='w';
 const isBlack = p => p&&p[0]==='b';
 
-unction pawnMoves(board,r,c,piece,enPassant){
+function pawnMoves(board,r,c,piece,enPassant){
   const moves=[];
   const dir=isWhite(piece)?-1:1;
   const startRow=isWhite(piece)?6:1;
