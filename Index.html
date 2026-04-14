@@ -5,7 +5,7 @@ const PIECES = {
   bK:'♚',bQ:'♛',bR:'♜',bB:'♝',bN:'♞',bP:'♟'
 };
 
-const initBoard = () => {
+onst initBoard = () => {
   const b = Array(8).fill(null).map(()=>Array(8).fill(null));
   const order = ['R','N','B','Q','K','B','N','R'];
   order.forEach((p,i)=>{b[0][i]='b'+p;b[7][i]='w'+p;});
